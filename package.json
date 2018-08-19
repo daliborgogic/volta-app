@@ -1,0 +1,23 @@
+{
+  "name": "volta-app",
+  "version": "1.0.0",
+  "description": "Progressive Web App",
+  "scripts": {
+    "dev": "node_modules/.bin/micro -l tcp://0.0.0.0:3001",
+    "build": "nuxt build",
+    "precommit": "npm run lint",
+    "start": "NODE_ENV=production node -r dotenv/config node_modules/.bin/micro -l tcp://0.0.0.0:3001"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "micro": "^9.3.3",
+    "nuxt-edge": "^2.0.0-25576842.6dd88f3",
+    "r2": "^2.0.1"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}

@@ -7,6 +7,12 @@
 # install
 $ npm i
 
+# environment variable
+$ cat > .env << EOL
+INSTAGRAM_TOKEN=
+TLD=
+EOL
+
 # dev
 $ npm run dev
 
@@ -17,5 +23,5 @@ $ npm run build
 $ npm start
 
 #  process manager
-$ pm2 start process.json --env production
+$ pm2 start process.json
 ```
