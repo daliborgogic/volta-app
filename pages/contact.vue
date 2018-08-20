@@ -9,9 +9,10 @@ import r2 from 'r2'
 
 export default {
   async asyncData () {
-    const { TLD } = process.env
-    const res = await r2(`https://cms.${TLD}/wp-json/wp/v2/pages/12`).response
+    const { CMS_DOMAIN } = process.env
+    const res = await r2(`https://${CMS_DOMAIN}/wp-json/wp/v2/pages/12`).response
     const data = await res.json()
+
     return { data }
   }
 }

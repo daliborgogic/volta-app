@@ -2,7 +2,6 @@
 
 > Progressive Web App
 
-
 ```bash
 # install
 $ npm i
@@ -10,7 +9,8 @@ $ npm i
 # environment variable
 $ cat > .env << EOL
 INSTAGRAM_TOKEN=
-TLD=
+CMS_DOMAIN=
+APP_DOMAIN=
 EOL
 
 # dev
