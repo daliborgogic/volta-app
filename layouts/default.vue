@@ -75,7 +75,7 @@ main
   flex-direction column
   min-height calc(100vh - 300px)
 
-externalLink = '[href*="//"]:not([href*="' + $APP_DOMAIN + '"])::after'
+externalLink = '.link[href*="//"]:not([href*="' + $APP_DOMAIN + '"])::after'
 {externalLink}
   content ""
   width 16px

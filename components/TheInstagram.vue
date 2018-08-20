@@ -3,7 +3,7 @@
   .tag Instagram
   .content(v-if="loading") Loading...
   .content
-    a(v-for="img, index in insta" href="#" :class="{first: index === 0, last: index === 11}")
+    a(v-for="img, index in insta" :href="img.link" :class="{first: index === 0, last: index === 11}")
       img(:src="img.images.standard_resolution.url")
 </template>
 
