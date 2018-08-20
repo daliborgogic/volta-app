@@ -6,7 +6,7 @@
 # install
 $ npm i
 
-# environment variable
+# environment variables
 $ cat > .env << EOL
 INSTAGRAM_TOKEN=
 CMS_DOMAIN=
